@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OpenIOC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://openioc.org/schemas/OpenIOC_1.1" id="36fcea61-8c7c-42bc-ba0b-505e5b2f1e71" last-modified="2018-04-27T09:19:49" published-date="0001-01-01T00:00:00">
+  <metadata>
+    <short_description>*New IOC*</short_description>
+    <description>PyIOCe Generated IOC</description>
+    <authored_by>PyIOCe</authored_by>
+    <authored_date>2018-04-27T09:03:15</authored_date>
+    <links/>
+  </metadata>
+  <criteria>
+    <Indicator id="a548f1b9-d196-4d5f-9ea1-ce2e7de11284" operator="OR">
+      <IndicatorItem preserve-case="false" negate="false" id="c8da74aa-2cdc-40cd-8932-4a5cd659fb80" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">190.85.21.244</Content>
+      </IndicatorItem>
+      <IndicatorItem preserve-case="false" negate="false" id="7a766e6f-4fd6-40b7-83a2-9ff89f19d82e" condition="is">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">header.id</Content>
+      </IndicatorItem>
+      <IndicatorItem preserve-case="false" negate="false" id="515195c3-593e-417d-ad16-dd5d611b8e26" condition="is">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">696d616765732f7964774e657761726b2e6a7067</Content>
+      </IndicatorItem>
+      <IndicatorItem preserve-case="false" negate="false" id="dfbf8a90-6c54-42e3-b8e8-95d0873ce6dd" condition="is">
+        <Context document="Email" search="Email/From" type="mir"/>
+        <Content type="string">jesus@el-perdedor.eu</Content>
+      </IndicatorItem>
+      <IndicatorItem preserve-case="false" negate="false" id="80f1a80e-e6fd-4cef-88b3-741c4f8fab86" condition="is">
+        <Context document="Network" search="Network/URI" type="mir"/>
+        <Content type="string">http://allisonbessblog.com/7Bsf4bSOgI/</Content>
+      </IndicatorItem>
+    </Indicator>
+  </criteria>
+  <parameters/>
+</OpenIOC>
